@@ -53,7 +53,8 @@ Class UsuarioController{
         if(!isset($_SESSION['id'])){
             header("Location: index.php");
         }
-
+        $tarefaModel = new Tarefa();
+        $tarefas = $tarefaModel->listar($_SESSION['id']);
         include __DIR__ . "/../view/painel.php";
     }
 

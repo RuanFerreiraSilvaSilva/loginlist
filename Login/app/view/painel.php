@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Painel</title>
 </head>
+<?php include __DIR__ . "listar.php"; ?>
 <body>
 
     <h1>
